@@ -13,11 +13,13 @@ public class HotelRoom
     {
 
     }
-    public HotelRoom(int theRoomNumber, String theRoomType, int theOccupied, double rate)
+    public HotelRoom(int theRoomNumber, String theRoomType, int theOccupied, double theRate)
     {
         roomNtmber =  theRoomNumber;
         roomType = theRoomType;
         occupied = theOccupied;
+        occupied = theOccupied;
+        rate = theRate;
     }
 
     public void setTheRoomNumber(int theRoomNumber)
@@ -34,9 +36,9 @@ public class HotelRoom
     {
         occupied = theOccupied;
     }
-    public void setTheRate(double setTheRate)
+    public void setTheRate(double theRate)
     {
-        rate = setTheRate;
+        rate = theRate;
     }
 
     public int getTheRoomNumber()
