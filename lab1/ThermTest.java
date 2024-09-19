@@ -9,10 +9,12 @@ public class ThermTest
 	{ // being main method
 
 		Thermometer thermA = new Thermometer();		// Create an instance of our Thermometer class
-		double t =2.0;
-		double a =30.0;
+		double t;
+		
 
-        Thermometer thermB = new Thermometer(t);
+        Thermometer thermB = new Thermometer(10.0);
+
+		t = thermB.getCelsius();
 		
 
 
@@ -21,8 +23,6 @@ public class ThermTest
 		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
 		thermA.setCelsius(20.0);
 		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
-		System.out.println("temp. of thermometer B is " + thermB.getCelsius());
-		thermB.setCelsius(a);
-		System.out.println("Temp. of thermometer B is " + thermB.getCelsius());
+		System.out.println("temp. of thermometer B is " + t);
 	} // end main
 } // end class ThermTest
