@@ -3,6 +3,7 @@ public class Rectangle
 {
     private int  length;
     private int width ;
+    
 
 
 
@@ -56,9 +57,21 @@ public class Rectangle
         return width;
     }
 
+    public int getArea()
+    {
+        return length*width;
+        
+    }
+
+    public int getPerimeter()
+    {
+        return length/width;
+    }
+        
+
     public String toString2()
     {
-        return "Length = " + length + ", Width = "  + width;
+        return "Length = " + length + ", Width = "  + width + "\n Area = " + getArea() + ", perimeter = " + getPerimeter();
         
         
 
