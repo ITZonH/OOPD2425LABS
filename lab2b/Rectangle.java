@@ -24,6 +24,7 @@ public class Rectangle
             }
         else
             {
+                this.length=length;
                 System.out.println("Length is not 0.0 or 40.0");
             }
         
@@ -38,6 +39,7 @@ public class Rectangle
             }
         else
             {
+                this.width=width;
                 System.out.println("Width is not 0.0 or 40.0");
             }
        
@@ -56,6 +58,8 @@ public class Rectangle
 
     public String toString2()
     {
+        return "Length = " + length + ", Width = "  + width;
+        
         
 
     }

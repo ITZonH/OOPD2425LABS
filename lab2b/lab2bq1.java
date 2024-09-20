@@ -3,15 +3,12 @@ public class lab2bq1
     public static void main(String[] args) 
     {
         Rectangle rectangle = new Rectangle();
-        
-
-        
-
+    
         rectangle.setLength(5);
         rectangle.setWidth(10);
 
-        System.out.println(" length = " + rectangle.getLength());
-        System.out.println("Width = " + rectangle.getWidth());
+        System.out.println( rectangle.toString2());
+        
         
     }
     
