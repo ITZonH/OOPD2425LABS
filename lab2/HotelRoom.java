@@ -8,6 +8,8 @@ public class HotelRoom
     private int occupied;
     private double rate;
     
+    
+    
 
     public HotelRoom()
     {
@@ -20,6 +22,8 @@ public class HotelRoom
         occupied = theOccupied;
         occupied = theOccupied;
         rate = theRate;
+
+        
     }
 
     public void setTheRoomNumber(int theRoomNumber)
@@ -60,6 +64,26 @@ public class HotelRoom
     {
         return rate;
     }
+
+    public boolean isOccupied()
+    {
+        if(getTheoccupied()==1)
+            {
+                 return true;
+
+            }
+
+        else
+            {
+                return false;
+            }
+       
+
+
+    }
+
     
 
 }
+    
+
