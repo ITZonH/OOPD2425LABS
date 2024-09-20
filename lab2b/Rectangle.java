@@ -3,6 +3,8 @@ public class Rectangle
 {
     private int  length;
     private int width ;
+    int i;
+    int j;
     
 
 
@@ -65,7 +67,42 @@ public class Rectangle
 
     public int getPerimeter()
     {
-        return length/width;
+        return 2*(length+width);
+    }
+
+    public void printRectangle()
+    {
+        
+        for(i=0;i<length;i++)
+            {
+            for(j=0;j<width;j++)
+                {
+                    if(i==0 || i ==length-1)
+                    {
+                        System.out.print("*");
+
+                    }
+                else if(j==0 || j==width-1)
+                    {
+                        System.out.print("*");
+                    }
+                else 
+                {
+                    System.out.print(" ");
+                }
+
+                    
+
+                }
+                System.out.println();
+
+                
+
+            }
+
+           
+            
+            
     }
         
 
