@@ -77,7 +77,7 @@ public class Rectangle
             {
             for(j=0;j<width;j++)
                 {
-                    if(i==0 || i ==length-1)
+                    if(i==0 || i == length-1)
                     {
                         System.out.print("*");
 

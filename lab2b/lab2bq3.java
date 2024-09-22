@@ -5,11 +5,14 @@ public class lab2bq3
     
     {
         Rectangle rectan = new Rectangle();
+       
         rectan.setLength(10);
-        rectan.setWidth(15);
+        rectan.setWidth(10);
 
         
         rectan.printRectangle();
+        
+
 
 
     }
