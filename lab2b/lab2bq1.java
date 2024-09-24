@@ -7,7 +7,7 @@ public class lab2bq1
         rectangle.setLength(25);
         rectangle.setWidth(10);
 
-        System.out.println( rectangle.toString2());   
+        System.out.println( rectangle.toString());   
         
     }
 
