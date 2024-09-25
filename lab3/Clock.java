@@ -1,3 +1,6 @@
+//Hamed Zon
+//c00259228
+//this code take current live time and print the second each time
 package lab3;
 import java.util.Calendar ;
 public class Clock 
@@ -23,19 +26,13 @@ public class Clock
                 
             }
             t.tick();
-            System.err.println(t.toString());
+            System.out.println(t.toString());
             newMin = t.getMinute();
             startTime = System.currentTimeMillis();
             currentTime = startTime;
             
         }
-        
 	
-		
-
-	
-
-        
     }
     
 }
