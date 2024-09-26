@@ -50,7 +50,7 @@ public class SavingAccount
         String toSavingAccountString = "";
 
         toSavingAccountString += "Ballance is " + savingBanl;
-        toSavingAccountString += "\nAccount number is " + accountNumber;
+        toSavingAccountString += "\nAccount N. " + accountNumber;
 
         return toSavingAccountString;
 
