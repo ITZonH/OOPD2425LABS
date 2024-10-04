@@ -91,16 +91,7 @@ public class MyHr
                                     newEmployee.setEmployeeType(employeeStatus);
                                     newEmployees[index] = newEmployee;
 
-                                    if(newEmployees.length<=2)
-                                        {
-                                            office = offices[index];
-
-                                        }
-                                    else
-                                        {
-                                            index++;
-
-                                        }
+                                   
                                     
                                  
                                     
