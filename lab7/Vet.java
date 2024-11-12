@@ -1,5 +1,6 @@
 package lab7;
-
+//Hamed Zon
+//C00259228
 public class Vet 
 {
     private String vetName;
