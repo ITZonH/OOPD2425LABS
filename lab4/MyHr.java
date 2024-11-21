@@ -22,14 +22,16 @@ public class MyHr
         String street;
         int count=0;
         int option=0;
-        int index;
+        int index=0;
+        //int index2 =0;
+        int index3 =0;
 
         //int employeeIndex;
 
         for(index =0; index < offices.length;index++)
             {
-                office = new Office();
-                offices[index]= office;
+                office = new Office();//make office object
+                offices[index]= office;//adding offices
             }
 
            
@@ -50,7 +52,7 @@ public class MyHr
                 case 1:
                 for(index =0; index < offices.length;index++)
                 {
-                    System.out.println(offices[index].toString());
+                    System.out.println(offices[index].toString());//print all offices
                     System.out.println("---------------------------------------");
                 }
                 
@@ -58,27 +60,28 @@ public class MyHr
                     
 
                 case 2:
-                    if(count< newEmployees.length)
+                    if(count<newEmployees.length)
                         {
 
                             System.out.println("Are you Staff or Manager");   
-                            employeeStatus = in.nextLine();
+                            employeeStatus = in.next();
 
                             System.out.println("Enter Employee's First Name");  
-                            employeeFirstName = in.nextLine();
+                            employeeFirstName = in.next();
                         
                             System.out.println("Enter Employee's Last Name");
-                            employeeLastName = in.nextLine();
+                            employeeLastName = in.next();
                         
                                                         
-                            System.out.println("Enter Employee's Address");
+                            System.out.println("Enter Employee's Address Bellow");
+
                         
                             System.out.println("Enter City");
-                            city = in.nextLine();
+                            city = in.next();
                             System.out.println("Enter Street");
-                            street = in.nextLine();
+                            street = in.next();
                             System.out.println("Enter County");
-                            county = in.nextLine();
+                            county = in.next();
                             
                             
                         
@@ -89,12 +92,11 @@ public class MyHr
                                     newEmployee = new Employee(employeeFirstName,employeeLastName);
                                     newEmployee.setNewAddress(address);
                                     newEmployee.setEmployeeType(employeeStatus);
+                                    offices[count].addOfficeEmployee(newEmployee);
+                                    count++;
                                     newEmployees[index] = newEmployee;
-
-                                   
                                     
-                                 
-                                    
+                                    index = index %newEmployees.length;
 
                                 }  
                             else if(employeeStatus.equalsIgnoreCase("manager"))  
@@ -106,7 +108,11 @@ public class MyHr
                                     newEmployee.setNewAddress(address);
                                     newEmployee.setCarInfos(carInfos);
                                     newEmployee.setEmployeeType(employeeStatus);
+                                    offices[count].addOfficeEmployee(newEmployee);
+                                    count++;
                                     newEmployees[index] = newEmployee;
+                                
+                                    index =index %newEmployees.length;
 
                                 }
 
@@ -116,7 +122,7 @@ public class MyHr
                                     break;
                                 }
                                                 
-                                count++;
+                                
                                 System.out.println("-----------------------------------");
                                 System.out.println("Employee Successfully Added Employee " + count );
                                 

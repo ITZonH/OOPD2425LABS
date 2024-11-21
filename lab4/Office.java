@@ -8,15 +8,22 @@ public class Office
 {
     private static int roomNum=100;
     private int roomId;
-    private static int max=2;
-    private Employee[] staffPerOffice = new Employee[max];
-    private int addOfficeIndex;
+    private static final int MAX=2;
+    private Employee[] staffPerOffice = new Employee[MAX];
+    private int addOfficeIndex=0;
+    
     
 
     public Office()
     {
        roomId = roomNum;
        roomNum++;
+
+    }
+
+    public int getOfficeIndex()
+    {
+        return addOfficeIndex;
 
     }
 
@@ -27,11 +34,11 @@ public class Office
 
     public String addOfficeEmployee(Employee theAddOffice)
     {
-        if(addOfficeIndex<max)
+        if(addOfficeIndex<MAX)
             {
                 staffPerOffice[addOfficeIndex] = theAddOffice;
                 addOfficeIndex++; 
-                return "You have: " + addOfficeIndex + "  in the Office you can add " + (max-addOfficeIndex) + " more!!!";
+                return "You have: " + addOfficeIndex + "  in the Office you can add " + (MAX-addOfficeIndex) + " more!!!";
             }
         else
             {
@@ -44,7 +51,21 @@ public class Office
     public String toString()
     {
         String officeData ="";
-        officeData += "Room ID: " + getRoomNumber();
+        officeData += "In Office: " + getRoomNumber() + " we have: " + addOfficeIndex;
+        for(Employee e: staffPerOffice)
+            {
+
+                if(e !=null)
+                    {
+                        officeData += "\nEmployee's informations: " + "\n" + e.toString();
+                        
+                    }
+               
+                
+            }
+       
+       
+
          return officeData; 
          
 

@@ -86,35 +86,25 @@ public class Employee
             public String toString()
             {
                 String employesInfos ="";
-                if(employeeType.equalsIgnoreCase("staff"))
-                    {
-                        employesInfos +=  "First Name: " + getFirstName(); 
-                        employesInfos += "\nLast Name: " + getLastName();
-                        employesInfos += "\nEmployee's Id: " + getEmployeeId();
-                        employesInfos += "\nEmployee's Satus: " + getEmployeeType();
-                        employesInfos += "\nEmployee's Address: " + getNewAddress();
-                        return employesInfos;
-                    
-                    }
-                    
-                
-                else if(employeeType.equalsIgnoreCase("manager"))
-                    {
-                        employesInfos +=  "First Name: " + getFirstName(); 
-                        employesInfos += "\nLast Name: " + getLastName();
-                        employesInfos += "\nEmployee's Id: " + getEmployeeId();
-                        employesInfos += "\nEmployee's Satus: " + getEmployeeType();
-                        employesInfos += "\nCar Infos: " + getCarInfos();
-                        employesInfos += "\nEmployee's Address: " + getNewAddress();
-                        
-                        return employesInfos;
-                    }
-                    else 
-                        {
-                            return "Not valid";
-                        }
-                        
 
+                if (employeeType.equalsIgnoreCase("manager") ||employeeType.equalsIgnoreCase("staff"))
+                    {
+                        employesInfos +=  "First Name: " + getFirstName(); 
+                        employesInfos += "\nLast Name: " + getLastName();
+                        employesInfos += "\nEmployee's Id: " + getEmployeeId();
+                        employesInfos += "\nEmployee's Satus: " + getEmployeeType();
+                        employesInfos += "\nEmployee's Address: " + getNewAddress(); 
+
+                    }
+
+                                         
+                
+                if(employeeType.equalsIgnoreCase("manager"))
+                    {
+                        employesInfos += "\nCar Infos: " + getCarInfos();
+                    }
+                        
+                    return employesInfos;
             }
             
         

@@ -6,8 +6,8 @@ public class lab2bq3
     {
         Rectangle rectan = new Rectangle();
        
-        rectan.setLength(10);
-        rectan.setWidth(5);
+        rectan.setLength(30);
+        rectan.setWidth(50);
 
         
         rectan.printRectangle();
