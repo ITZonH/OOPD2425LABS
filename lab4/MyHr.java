@@ -24,7 +24,7 @@ public class MyHr
         int option=0;
         int index=0;
         //int index2 =0;
-        int index3 =0;
+       // int index3 =0;
 
         //int employeeIndex;
 

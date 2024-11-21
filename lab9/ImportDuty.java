@@ -1,4 +1,7 @@
 package lab9;
+//Hamed Zon
+//C00259228
+//Interface to calculate Imports
 
 public interface ImportDuty 
 {
